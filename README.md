@@ -163,3 +163,7 @@ need intermediate files that are not included, and they are not needed to check 
   Combinatorics 9 (2002), R41
 - O. D. King and P. Gaborit, table of DNA codes with constant GC content:
   <https://rambutan.umassmed.edu/king/dnacodes.html>
+
+## License
+
+[MIT](LICENSE). It covers the code files as well as the scripts.
