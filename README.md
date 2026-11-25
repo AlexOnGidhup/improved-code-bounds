@@ -52,7 +52,7 @@ Hamming distance `R` of a codeword.
 | K_7(9,4) | 1475 (Marosi 2026) | **1372** | [K7_9_4__1372.txt](codes/covering/K7_9_4__1372.txt) |
 
 Three more entries follow from K_6(6,2) ≤ 216 by standard rules (append a coordinate; direct sum
-with K_6(3,1) = 18 and K_6(4,1) ≤ 72). They are consequences, not separate discoveries:
+with K_6(3,1) = 18 and K_6(4,1) = 72). They are consequences, not separate discoveries:
 
 | Parameter | Previous upper bound | New | File |
 |---|---|---|---|
@@ -96,8 +96,11 @@ Montemanni, Discrete Mathematics 311, 2011) could not be read, so this stays ope
 - **K_7(5,1).** The margin is three codewords, the narrowest of the confirmed results.
 - **Old tables.** Kéri's covering tables were last revised in 2011, and Brouwer's pages accept
   submissions by email, so unpublished improvements cannot be ruled out.
-- **Second-hand reading.** The literature check was done by agents whose web tool returns page
-  summaries. Table values quoted here were read that way, not from the original pages by a person.
+- **How the tables were read.** The previous bounds of the 13 confirmed results were re-read from
+  the original pages and files on 25 November 2026 (Brouwer's two pages, Kéri's PDFs and list of
+  improvements, Table 1 of Marosi's preprint, `cov/bounds.json` in `Mapika/coldcase`). The wider
+  literature search and the comparison values of the unconfirmed results come from agents whose
+  web tool returns page summaries.
 
 ## File format
 
@@ -110,7 +113,7 @@ binary coordinates come first. For the DNA code `0=A, 1=T, 2=G, 3=C`. File names
 | Result | Construction |
 |---|---|
 | N(2,12,7), N(3,11,7) | Start from the code that the table derives from a ternary code, add the words that still fit, then local search with swaps |
-| A_3(15,5) | Union of 12 cosets of a linear [15,6,≥5] ternary code; the 12 syndromes are a clique found by local search (8 minutes, one core) |
+| A_3(15,5) | Found as a union of 12 cosets of a linear [15,6,≥5] ternary code, with the 12 syndromes a clique found by local search (8 minutes, one core). The result is a union of 4 cosets of a linear [15,7] code |
 | K_5(9,5), K_5(9,4), K_5(9,3), K_6(6,2), K_7(9,4) | Matrix method: the code is {x : Hx ∈ S} for a check matrix H and a small syndrome set S, with H and S found by simulated annealing or best-response iteration |
 | K_5(7,3) | Orbits of a random group of coordinate permutations and affine symbol maps, then weighted set cover over the orbits |
 | K_7(5,1) | Tabu search on the full space, 820 → 769 → 766 |

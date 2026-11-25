@@ -6,7 +6,11 @@ beaten, or implied by a standard rule?
 Six research agents (Claude Sonnet 5.5) fetched the comparison tables themselves, searched for
 later papers and repositories, and tested the standard derivation rules against neighbouring table
 cells. Their web tool returns summaries of pages, so numbers taken from web pages are second-hand.
-No source was read in the original by a person.
+
+Afterwards the orchestrating session re-read the previous bounds of the 13 confirmed results in
+the original sources (page text of Brouwer's two pages, text of Kéri's PDFs and his list of
+improvements, Table 1 of Marosi's preprint, and all ten cells in `cov/bounds.json`). Every value
+in the table below for those 13 results matched. No source was read by a person.
 
 ## Verdicts
 
@@ -58,8 +62,8 @@ No result was found to be already known, already beaten, or implied by a standar
   K_7(5,1) ≤ 769, K_7(9,4) ≤ 1843.
 - Marosi v3: K_6(7,3) ≤ 227 and K_7(9,4) ≤ 1475. The other four cells are absent.
 - `Mapika/coldcase`, `cov/bounds.json`: K_6(6,2) = 133–274 and K_6(7,3) = 70–246, copied from Kéri.
-- K_6(6,2) ≤ 216 is not implied by alphabet or direct-sum rules; the best derived values are 288,
-  324 and 396.
+- K_6(6,2) ≤ 216 is not implied by the neighbouring cells: 6 · K_6(5,2) ≤ 396 and
+  K_6(3,1)^2 = 324.
 
 ### Ternary constant-weight codes
 
